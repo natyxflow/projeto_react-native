@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, Image} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
+import styles from './styles';
 
 import Fogao1 from '../../../assets/mercadorias/Fogao1.jpg';
 import Fogao2 from '../../../assets/mercadorias/Fogao2.jpg';
@@ -42,12 +43,12 @@ function Produtos() {
         <View>
             <ScrollView>
             
-                <Text>Confira nossos produtos!</Text>
+                <Text style={styles.titulo}>Confira nossos produtos!</Text>
                 {
                     mercadorias.map((produto, key) => {
                         return (
-                            <View>
-                                <Text>{produto.imagem}</Text>
+                            <View style={styles.produtos}>
+                                <Text style={styles.imagem}>{produto.imagem}</Text>
                                 <Text>{produto.nome}</Text>
                                 <Text>R$ {produto.preco}</Text>
                             </View>

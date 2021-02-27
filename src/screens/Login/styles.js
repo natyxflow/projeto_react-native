@@ -28,13 +28,13 @@ const styles = StyleSheet.create({
 
     },
     btn: {
-        backgroundColor: "gray",
+        backgroundColor: "#4F4F4F",
         height: 50,
         marginTop: 20,
         padding: 8,
         borderRadius: 10,
         borderWidth: 1,
-        borderColor: "black"
+        borderColor: "#363636"
 
     },
     textbtn: {
